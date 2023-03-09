@@ -1,0 +1,1252 @@
+C:\Users\samjakob\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_C_COMPILER=cl.exe -DCMAKE_CXX_COMPILER=cl.exe -G "Visual Studio 17 2022" -S C:\Users\samjakob\CLionProjects\CUDATesting -B C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release
+-- Selecting Windows SDK version 10.0.22000.0 to target Windows 10.0.22621.
+CMake Error at C:/Users/samjakob/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake:739 (message):
+  Compiling the CUDA compiler identification source file
+  "CMakeCUDACompilerId.cu" failed.
+
+  Compiler:
+
+  Build flags:
+
+  Id flags: --keep;--keep-dir;tmp -v
+
+  
+
+  The output was:
+
+  1
+
+  MSBuild version 17.5.0+6f08c67f3 for .NET Framework
+
+  Build started 3/9/2023 2:51:24 PM.
+
+  Included response file: C:\Program Files\Microsoft Visual
+  Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.rsp
+
+  
+
+  Project
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  on node 1 (default targets).
+
+  PrepareForBuild:
+
+    Creating directory "Debug\".
+    Creating directory "Debug\CompilerIdCUDA.tlog\".
+
+  InitializeBuildStatus:
+
+    Creating "Debug\CompilerIdCUDA.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+
+  AddCudaCompileDeps:
+
+    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=12 /D__CUDACC_VER_MINOR__=1 /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" /I. /FIcuda_runtime.h /c C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu 
+
+  Project
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  (1) is building
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  (1:2) on node 1 (CudaBuildCore target(s)).
+
+  CudaBuildCore:
+
+    Compiling CUDA source file CMakeCUDACompilerId.cu...
+    Creating directory "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\x64\Debug".
+    cmd.exe /C "C:\Users\samjakob\AppData\Local\Temp\tmp24a1571f6b7d4aa6ae8d54bc09fb06e9.cmd"
+    "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\vc143.pdb" -o C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu"
+    
+    C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\vc143.pdb" -o C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu" 
+    #$ _NVVM_BRANCH_=nvvm
+    #$ _SPACE_= 
+    #$ _CUDART_=cudart
+    #$ _HERE_=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin
+    #$ _THERE_=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin
+    #$ _TARGET_SIZE_=
+    #$ _TARGET_DIR_=
+    #$ _TARGET_SIZE_=64
+    #$ _WIN_PLATFORM_=x64
+    #$ TOP=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/..
+    #$ NVVMIR_LIBRARY_DIR=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/../nvvm/libdevice
+    #$ PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/../nvvm/bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/../lib;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86;;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX86\x86;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\bin\Roslyn;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\Performance Tools;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\\x86;C:\Program Files (x86)\Windows Kits\10\bin\\x86;C:\Program Files\Microsoft Visual Studio\2022\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\libnvvp;C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\sdk\flutter\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA\CUDNN\v8.7.0\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\VSCodium\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2023.1.0\;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64\;C:\Users\samjakob\scoop\apps\nodejs\current\bin;C:\Users\samjakob\scoop\apps\nodejs\current;C:\Users\samjakob\scoop\apps\perl\current\perl\site\bin;C:\Users\samjakob\scoop\apps\perl\current\perl\bin;C:\Users\samjakob\scoop\apps\elixir\current\bin;C:\Users\samjakob\scoop\apps\qemu\current;C:\Users\samjakob\scoop\shims;C:\Users\samjakob\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\samjakob\AppData\Local\Programs\Python\Python311\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin\\..\extras\CUPTI\lib64;C:\Program Files\PowerShell\7;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\libnvvp;C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\sdk\flutter\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.4.0\;C:\Program Files\NVIDIA\CUDNN\v8.7.0\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Microsoft V;C:\Users\samjakob\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\samjakob\AppData\Local\Programs\oh-my-posh\bin;C:\Users\samjakob\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\libnvvp;C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\sdk\flutter\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA\CUDNN\v8.7.0\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\VSCodium\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2023.1.0\;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64\;C:\Users\samjakob\scoop\apps\nodejs\current\bin;C:\Users\samjakob\scoop\apps\nodejs\current;C:\Users\samjakob\scoop\apps\perl\current\perl\site\bin;C:\Users\samjakob\scoop\apps\perl\current\perl\bin;C:\Users\samjakob\scoop\apps\elixir\current\bin;C:\Users\samjakob\scoop\apps\qemu\current;C:\Users\samjakob\scoop\shims;C:\Users\samjakob\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\samjakob\AppData\Local\Programs\Python\Python311\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin\\..\extras\CUPTI\lib64;C:\Program Files\PowerShell\7;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\libnvvp;C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\sdk\flutter\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.4.0\;C:\Program Files\NVIDIA\CUDNN\v8.7.0\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Microsoft V;C:\Users\samjakob\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\samjakob\AppData\Local\Programs\oh-my-posh\bin;C:\Users\samjakob\AppData\Local\Microsoft\WindowsApps;;C:\Users\samjakob\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\ninja\win\x64;
+    #$ INCLUDES="-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/../include"  
+    #$ LIBRARIES=  "/LIBPATH:C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/../lib/x64"
+    #$ CUDAFE_FLAGS=--sdk_dir "C:\Program Files (x86)\Windows Kits\10"
+    #$ PTXAS_FLAGS=
+    CMakeCUDACompilerId.cu
+    #$ resource file C:\Users\samjakob\AppData\Local\Temp/tmpxft_000060d0_00000000-8.res: [-D__CUDA_ARCH_LIST__=520 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin/../include"    -D "_MBCS" -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=66 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -FI "cuda_runtime.h" -Zi "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu" ]
+    #$ cl.exe @"C:\Users\samjakob\AppData\Local\Temp/tmpxft_000060d0_00000000-8.res" > "C:/Users/samjakob/AppData/Local/Temp/tmpxft_000060d0_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+    CMakeCUDACompilerId.cu
+    #$ erase C:\Users\samjakob\AppData\Local\Temp/tmpxft_000060d0_00000000-8.res
+    #$ cudafe++ --microsoft_version=1935 --msvc_target_version=1935 --compiler_bindir "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/HostX64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --display_error_number --orig_src_file_name "C:/Users/samjakob/CLionProjects/CUDATesting/cmake-build-release/CMakeFiles/3.24.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\Program Files (x86)\Windows Kits\10" --m64 --parse_templates --gen_c_file_name "C:/Users/samjakob/AppData/Local/Temp/tmpxft_000060d0_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_000060d0_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/samjakob/AppData/Local/Temp/tmpxft_000060d0_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/samjakob/AppData/Local/Temp/tmpxft_000060d0_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt/common_functions.h(91): error : identifier
+  "clock_t" is undefined
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(dllimport) __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) __declspec(__cudart_builtin__) clock_t __cdecl clock(void)
+                                                                                                                                             ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(382): error : explicit type
+  is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl fminf(float x, float y);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(382): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl fminf(float x, float y);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(382): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl fminf(float x, float y);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(402): error : explicit type
+  is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl fmin(double x, double y);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(402): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl fmin(double x, double y);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(402): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl fmin(double x, double y);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(458): error : explicit type
+  is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl fmaxf(float x, float y);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(458): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl fmaxf(float x, float y);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(458): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl fmaxf(float x, float y);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(478): error : explicit type
+  is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl fmax(double, double);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(478): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl fmax(double, double);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(478): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl fmax(double, double);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(902): error : explicit type
+  is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl log2(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(902): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl log2(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(902): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl log2(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(967): error : explicit type
+  is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl exp2(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(967): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl exp2(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(967): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl exp2(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1032): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl exp2f(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1032): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl exp2f(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1032): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl exp2f(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1255): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl expm1(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1255): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl expm1(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1255): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl expm1(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1347): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl expm1f(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1347): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl expm1f(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1347): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl expm1f(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1403): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl log2f(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1403): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl log2f(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1403): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl log2f(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1623): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl log1p(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1623): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl log1p(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1623): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl log1p(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1722): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl log1pf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1722): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl log1pf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1722): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl log1pf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1784): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl floor(double x) ;
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1784): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl floor(double x) ;
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(1784): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl floor(double x) ;
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2061): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl acosh(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2061): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl acosh(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2061): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl acosh(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2119): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl acoshf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2119): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl acoshf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2119): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl acoshf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2172): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl asinh(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2172): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl asinh(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2172): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl asinh(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2225): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl asinhf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2225): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl asinhf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2225): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl asinhf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2279): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl atanh(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2279): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl atanh(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2279): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl atanh(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2333): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl atanhf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2333): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl atanhf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2333): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl atanhf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2380): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl ldexp(double x, int exp) ;
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2380): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl ldexp(double x, int exp) ;
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2380): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl ldexp(double x, int exp) ;
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2480): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl logb(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2480): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl logb(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2480): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl logb(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2535): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl logbf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2535): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl logbf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2535): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl logbf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2575): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP int    __cdecl ilogb(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2575): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP int    __cdecl ilogb(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2575): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP int    __cdecl ilogb(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2615): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP int    __cdecl ilogbf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2615): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP int    __cdecl ilogbf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2615): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP int    __cdecl ilogbf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2691): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl scalbn(double x, int n);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2691): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl scalbn(double x, int n);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2691): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl scalbn(double x, int n);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2767): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl scalbnf(float x, int n);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2767): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl scalbnf(float x, int n);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2767): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl scalbnf(float x, int n);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2843): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl scalbln(double x, long int n);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2843): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl scalbln(double x, long int n);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2843): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl scalbln(double x, long int n);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2919): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl scalblnf(float x, long int n);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2919): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl scalblnf(float x, long int n);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2919): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl scalblnf(float x, long int n);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2994): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl frexp(double x, int *nptr) ;
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2994): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl frexp(double x, int *nptr) ;
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(2994): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl frexp(double x, int *nptr) ;
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3122): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl round(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3122): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl round(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3122): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP double __cdecl round(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3177): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl roundf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3177): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl roundf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3177): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP float  __cdecl roundf(float x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3195): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP long int __cdecl lround(double x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3195): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP long int __cdecl lround(double x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3195): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP long int __cdecl lround(double x);
+                                                                                                 ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3213): error : explicit
+  type is missing ("int" assumed)
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP long int __cdecl lroundf(float x);
+                                                                                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3213): error : attribute
+  "__host__" does not apply here
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP long int __cdecl lroundf(float x);
+                        ^
+    
+
+  C:\Program Files\NVIDIA GPU Computing
+  Toolkit\CUDA\v12.1\include\crt\math_functions.h(3213): error : expected a
+  ";"
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+      extern __declspec(__host__) __declspec(__device__) __declspec(__device_builtin__) _ACRTIMP long int __cdecl lroundf(float x);
+                                                                                                 ^
+    
+    Error limit reached.
+    100 errors detected in the compilation of "C:/Users/samjakob/CLionProjects/CUDATesting/cmake-build-release/CMakeFiles/3.24.2/CompilerIdCUDA/CMakeCUDACompilerId.cu".
+    Compilation terminated.
+    # --error 0x4 --
+
+  C:\Program Files\Microsoft Visual
+  Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\CUDA
+  12.1.targets(799,9): error MSB3721: The command ""C:\Program Files\NVIDIA
+  GPU Computing Toolkit\CUDA\v12.1\bin\nvcc.exe"
+  -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin
+  "C:\Program Files\Microsoft Visual
+  Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64" -x cu
+  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include"
+  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" -G
+  --keep-dir x64\Debug -maxrregcount=0 --machine 64 --compile -cudart static
+  -v -g -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd "
+  -Xcompiler "/FdDebug\vc143.pdb" -o
+  C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu""
+  exited with code 4.
+  [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+
+  Done Building Project
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  (CudaBuildCore target(s)) -- FAILED.
+
+  Done Building Project
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  (default targets) -- FAILED.
+
+  
+
+  Build FAILED.
+
+  
+
+  
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  (default target) (1) ->
+
+  
+  "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj"
+  (CudaBuildCore target) (1:2) ->
+
+  (CudaBuildCore target) ->
+
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt/common_functions.h(91): error : identifier "clock_t" is undefined [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(382): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(382): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(382): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(402): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(402): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(402): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(458): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(458): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(458): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(478): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(478): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(478): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(902): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(902): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(902): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(967): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(967): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(967): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1032): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1032): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1032): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1255): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1255): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1255): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1347): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1347): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1347): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1403): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1403): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1403): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1623): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1623): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1623): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1722): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1722): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1722): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1784): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1784): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(1784): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2061): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2061): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2061): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2119): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2119): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2119): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2172): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2172): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2172): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2225): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2225): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2225): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2279): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2279): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2279): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2333): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2333): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2333): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2380): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2380): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2380): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2480): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2480): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2480): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2535): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2535): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2535): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2575): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2575): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2575): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2615): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2615): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2615): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2691): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2691): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2691): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2767): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2767): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2767): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2843): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2843): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2843): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2919): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2919): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2919): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2994): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2994): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(2994): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3122): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3122): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3122): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3177): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3177): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3177): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3195): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3195): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3195): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3213): error : explicit type is missing ("int" assumed) [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3213): error : attribute "__host__" does not apply here [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\math_functions.h(3213): error : expected a ";" [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+    C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\CUDA 12.1.targets(799,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\vc143.pdb" -o C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CMakeCUDACompilerId.cu"" exited with code 4. [C:\Users\samjakob\CLionProjects\CUDATesting\cmake-build-release\CMakeFiles\3.24.2\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+  
+
+      0 Warning(s)
+      101 Error(s)
+
+  
+
+  Time Elapsed 00:00:01.55
+
+  
+
+  
+
+Call Stack (most recent call first):
+  C:/Users/samjakob/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake:6 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  C:/Users/samjakob/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake:48 (__determine_compiler_id_test)
+  C:/Users/samjakob/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCUDACompiler.cmake:307 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:12 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/samjakob/CLionProjects/CUDATesting/cmake-build-release/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/samjakob/CLionProjects/CUDATesting/cmake-build-release/CMakeFiles/CMakeError.log".
